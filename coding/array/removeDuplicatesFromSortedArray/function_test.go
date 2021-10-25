@@ -12,6 +12,7 @@ type instance struct {
 
 func TestFunction(t *testing.T) {
 	instances := []instance {
+		{[]int{1,1}, 1},
 		{[]int{0, 0, 1, 2, 2}, 3},
 		{
 			[]int{1, 1, 2, 4, 5, 6},
@@ -24,6 +25,6 @@ func TestFunction(t *testing.T) {
 	}
 
 	for _, v := range instances {
-		fmt.Printf("input is %v, the actual value is: %v", v, removeDuplicates(v.list))
+		fmt.Printf("input is %#v, the actual value is: %v \n", v, removeDuplicates2(v.list))
 	}
 }
