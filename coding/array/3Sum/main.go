@@ -36,6 +36,8 @@ func _3Sum1(nums []int) [][]int {
 	}
 	return result
 }
+
+//best solution
 func _3Sum2(nums []int) [][]int {
 	//inputMap := make(map[int]Com)
 	result := [][]int{}
@@ -67,6 +69,7 @@ func _3Sum2(nums []int) [][]int {
 	return result
 }
 
+//two pointers
 func _3Sum3(nums []int) [][]int  {
 	result, start, index, end, length := make([][]int, 0), 0, 0, 0, len(nums)
 	sort.Ints(nums)
